@@ -13,7 +13,8 @@
 <h1>Privacy Policy</h1>
 <p class="meta">Effective date: 21 September 2026</p>
 <p class="meta">21 September 2026 — added the "Who can see you" section describing the
-players list on the Play tab, and expanded the collection table.</p>
+players list on the Play tab, expanded the collection table, and rewrote "What
+other players see" surface by surface.</p>
 
 <p>GameSetMatch ("GSM", "the app", "we") is a social sports matchmaking app for
 racket sports — padel, tennis, and pickleball. It helps you find opponents at
@@ -29,13 +30,14 @@ this policy, contact
   <tr><th>Category</th><th>Data</th><th>Where it comes from</th></tr>
   <tr>
     <td>Account</td>
-    <td>Name, email address, a unique user ID, and which sign-in method you used</td>
+    <td>Name, email address, a unique user ID, which sign-in method you used and,
+    if you sign in with Google, a link to your Google profile picture</td>
     <td>You, via Sign in with Apple, Google Sign-In, or email/password (identity is managed by Firebase Authentication)</td>
   </tr>
   <tr>
     <td>Player profile</td>
     <td>The sports you play, your self-assessed skill level per sport, your date of birth,
-    your region and the area you type (for example, "Glyfada"), your usual playing days and
+    your home city and the area you add (for example, "Glyfada"), your usual playing days and
     times, your match radius, and whether players near your level can see you</td>
     <td>You, during onboarding and profile edits</td>
   </tr>
@@ -71,9 +73,15 @@ this policy, contact
   </tr>
 </table>
 
-<p>We do not collect precise location. Your region is chosen from a list; the
-area you show other players is free text you type (for example, "Glyfada").
-We do not collect health data, payment details, contacts, or photos.</p>
+<p>We do not collect precise location. Your home city is chosen from a list; if
+you allow location access when you sign up, the app uses your device's location
+during sign-up to suggest the city — the coordinates go to Apple's geocoding service to
+be turned into a place name, and only the city is sent to us. Your area, if you
+add one, is a short name you type yourself (for example, "Glyfada") and is not
+taken from your device. We do not collect health data, payment details or
+contacts. If you sign in with Google, we keep the link to your Google profile
+picture; in the app it is shown only to you, in Profile. We do not collect
+other photos.</p>
 
 <h2>Why we collect it (and the legal basis)</h2>
 <ul>
@@ -90,39 +98,58 @@ We do not collect health data, payment details, contacts, or photos.</p>
   Art. 6(1)(c).</li>
 </ul>
 
-<h2>What other players see</h2>
+<h2 id="what-other-players-see">What other players see</h2>
 <p>GSM is a social matchmaking app, so parts of your profile are visible to
-other signed-in players by design: the name you set, sports, skill level and
-rating, area, and your match history, results, and league standings. Your
-email address and sign-in method are never shown to other players. The list of
-players shown on the Play tab is governed by a setting you control — see
-<a href="#who-can-see-you">Who can see you</a> below.</p>
+other signed-in players by design. What is shown depends on where:</p>
+<ul>
+  <li><strong>The players list</strong> — your first name, level, area and usual
+  times, only while <em>Players near your level can see you</em> is on (see
+  <a href="#who-can-see-you">Who can see you</a>).</li>
+  <li><strong>A post that you want to play</strong> — your first name, your level,
+  the sport, the time you want to play, your court if you have one or your area if
+  you need one, and your partner's first name for doubles. A post is visible to
+  every signed-in GSM player, in any city, whether or not you are on the players
+  list; withdrawing the post removes it.</li>
+  <li><strong>Asks and matches</strong> — the players you ask or play with or
+  against see the name you set and your level, and the result once the match is
+  scored.</li>
+  <li><strong>Leagues</strong> — if you join a league, its standings and fixtures
+  show your name, results and position to other players.</li>
+  <li><strong>Search by name</strong> — a player looking for a doubles partner for
+  a league can find you by typing the start of your name, whatever your settings,
+  and sees your name and your rating points for that sport.</li>
+</ul>
+<p>Your email address, sign-in method, date of birth and match radius are never
+shown to other players.</p>
 
 <h2 id="who-can-see-you">Who can see you</h2>
-<p>This section is about one thing: the list of players shown to others on the
-Play tab.</p>
-<p>In Profile, the setting "Players near your level can see you" is on by
-default when you sign up. You can turn it off at any time in Profile.</p>
+<p>The Play tab has a list of players, starting with those near your level, so
+that players can ask each other to play. Whether you are on that list is
+controlled by one setting in the app, <strong>Players near your level can see
+you</strong>. It is on by default when you sign up, and you can turn it off at
+any time in Profile.</p>
 <p>When it is on, your entry in that list is exactly four things: your first
-name, level, area, and usual times — nothing else. No surname, phone number,
-photo, or precise location is shown. Appearing under a sport discloses that
-you play it.</p>
-<p>The list is not limited to players near your level. It is shown to every
-signed-in GSM player in your city who plays that sport. When few players are
-close to your level, the list widens to include everyone in your city for
-that sport.</p>
-<p>Turning the setting off stops you appearing in that list. The list is built
-only from players who have it on, worked out fresh each time it is shown,
-with no stored copy — a screen that is already open picks up the change the
-next time it loads.</p>
-<p>This setting governs only that list. When you post an availability slot,
-send a match offer, or agree a match, your first name, level, and area are
-published to every signed-in GSM player in your city who plays that sport —
-whether or not this setting is on.</p>
-<p>Being findable by other players is part of the matchmaking service you sign
-up for, so we process this data on the basis of performance of a contract
-(GDPR Art. 6(1)(b)). This is set out on the last page of onboarding when you
-sign up, and the setting is in Profile at any time.</p>
+name (the first word of the name on your profile), your level, your area and
+your usual times — the last two once you have added them to your profile — and
+nothing else. It is shown to other signed-in GSM players in your city who play
+the same sport, so they can ask you to play. No surname, phone number, photo,
+location from your device, distance or rating points are shown. You appear
+under each sport you play, so the list also shows that you play it.</p>
+<p>The list is shown to every signed-in player in your city who plays that
+sport, not only to players near your level: when few players are close to your
+level, the app shows everyone in your city for that sport.</p>
+<p>We do this because being findable by other players is the matchmaking
+service you sign up for. The legal basis is performance of that contract
+(GDPR Art. 6(1)(b)). The last page of sign-up tells you that players in your
+city will see you and lets you change the setting before you finish; after
+that, the setting is in Profile at any time.</p>
+<p>Turning the setting off removes you from the list immediately: the list is
+built afresh each time it loads and from that moment no longer includes
+you.</p>
+<p>This setting covers the list only. Other ways players can see you — your own
+posts, asks and matches, leagues, and search by name — are described above in
+<a href="#what-other-players-see">What other players see</a>, and they do not
+depend on this setting.</p>
 
 <h2>Who processes your data</h2>
 <p>We do not sell your data, we show no advertising, and we do not track you
@@ -136,7 +163,8 @@ providers, acting on our instructions:</p>
   United States; transfers are covered by Google's Data Processing Terms,
   including the EU Standard Contractual Clauses.</li>
   <li><strong>Apple</strong> — Sign in with Apple and push notification
-  delivery, if you use them.</li>
+  delivery, if you use them, and, if you allow location access during sign-up,
+  turning your device's location into a city name.</li>
   <li><strong>Google Places</strong> — venue search queries, to return court
   results.</li>
 </ul>
@@ -168,8 +196,9 @@ your supervisory authority — in Greece, the Hellenic Data Protection Authority
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes in a way that matters, we will update this page and
-note the new effective date above. Significant changes will be announced in the
-app.</p>
+note the new effective date above, and we will tell account holders about
+significant changes by email or in the app. The current version is always
+linked from the app's sign-in screen.</p>
 </main>
 <footer class="site">
   <p><a href="../terms/">Terms of Service</a> · <a href="mailto:iggy.thetatech@gmail.com">Contact</a></p>
